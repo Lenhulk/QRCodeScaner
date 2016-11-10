@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ScanQRCodeVC: UIView {
+class ScanQRCodeVC: UIViewController {
 
     /*
     // Only override draw() if you perform custom drawing.

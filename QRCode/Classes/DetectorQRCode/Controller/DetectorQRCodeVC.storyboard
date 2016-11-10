@@ -1,29 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="K7H-fd-ChE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--识别二维码-->
         <scene sceneID="nZd-xr-o40">
             <objects>
-                <viewController id="K7H-fd-ChE" sceneMemberID="viewController">
+                <viewController id="K7H-fd-ChE" customClass="DetectorQRCodeVC" customModule="QRCode" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WVG-pM-b2L"/>
                         <viewControllerLayoutGuide type="bottom" id="y4K-M9-xIq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7VT-xq-si6">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="code2" translatesAutoresizingMaskIntoConstraints="NO" id="1OT-AL-gle">
+                                <rect key="frame" x="37" y="64" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Et0-bN-IjW"/>
+                                    <constraint firstAttribute="height" constant="300" id="uty-47-qYc"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xO1-4E-KDx">
+                                <rect key="frame" x="156" y="372" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="开始识别"/>
+                                <connections>
+                                    <action selector="beginClick" destination="K7H-fd-ChE" eventType="touchUpInside" id="6pb-v8-hxi"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DqH-Bs-s3K">
+                                <rect key="frame" x="37" y="367" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="0Xc-AP-peh"/>
+                                    <constraint firstAttribute="height" constant="300" id="NeZ-LK-Lcp"/>
+                                </constraints>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yus-0w-SyS">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="y4K-M9-xIq" firstAttribute="top" secondItem="DqH-Bs-s3K" secondAttribute="bottom" id="B64-eG-AIz"/>
+                            <constraint firstItem="1OT-AL-gle" firstAttribute="top" secondItem="WVG-pM-b2L" secondAttribute="bottom" id="E9M-wC-nsO"/>
+                            <constraint firstItem="1OT-AL-gle" firstAttribute="centerX" secondItem="7VT-xq-si6" secondAttribute="centerX" id="PwR-PD-Z8C"/>
+                            <constraint firstItem="DqH-Bs-s3K" firstAttribute="centerX" secondItem="7VT-xq-si6" secondAttribute="centerX" id="nvc-b9-ahy"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="识别二维码" id="329-5r-YmL"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
+                    <connections>
+                        <outlet property="resultImageView" destination="DqH-Bs-s3K" id="fcm-xM-8RL"/>
+                        <outlet property="sourceImageView" destination="1OT-AL-gle" id="H7q-3l-7EV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dlH-eX-cCr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1276" y="452"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="code2" width="1282" height="328"/>
+    </resources>
 </document>
