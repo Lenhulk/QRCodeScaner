@@ -22,9 +22,9 @@ class DetectorQRCodeVC: UIViewController {
         guard let features = detector.features(in: imageCI) as? [CIQRCodeFeature] else { return }
         
         //读取图片特征
-//        for feature in features{
-//            print(feature.messageString ?? "")
-//        }
+        for feature in features{
+            print(feature.messageString ?? "")
+        }
         
         //给二维码绘制边框
         resultImageView.image = drawQRCodeBorder(features: features, sourceImage: sourceImageView.image!)
