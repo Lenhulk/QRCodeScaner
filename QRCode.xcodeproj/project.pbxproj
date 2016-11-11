@@ -239,6 +239,7 @@
 				TargetAttributes = {
 					E982183B1DD44EC600000161 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = ZF463HMDY2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -408,6 +409,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZF463HMDY2;
 				INFOPLIST_FILE = "$(SRCROOT)/QRCode/Classes/Other/System/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.crazy.QRCode;
@@ -420,6 +422,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZF463HMDY2;
 				INFOPLIST_FILE = "$(SRCROOT)/QRCode/Classes/Other/System/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.crazy.QRCode;
@@ -447,6 +450,7 @@
 				E98218501DD44EC600000161 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

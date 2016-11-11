@@ -50,7 +50,7 @@ extension DetectorQRCodeVC{
         //3遍历图片特征，获取frame，绘制边框
         for feature in features{
             let bounds = feature.bounds
-            let newBounds = CGRect(x: bounds.origin.x, y: sourceImageSize.height - bounds.size.height - bounds.origin.y, width: bounds.size.width, height: bounds.size.height)  //修改坐标原点
+            let newBounds = CGRect(x: bounds.origin.x, y: sourceImageSize.height - bounds.size.height - bounds.origin.y, width: bounds.size.width, height: bounds.size.height)  //bounds的原点在左下角，图形上下文的原点在左上角，修改坐标原点
             let path = UIBezierPath(rect: newBounds)
             path.lineWidth = 3
             UIColor.red.set()
