@@ -17,6 +17,11 @@
 		E982186F1DD453B200000161 /* GeneratorQRCodeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E982186E1DD453B200000161 /* GeneratorQRCodeVC.storyboard */; };
 		E98218711DD453CE00000161 /* DetectorQRCodeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98218701DD453CE00000161 /* DetectorQRCodeVC.storyboard */; };
 		E98218731DD453EA00000161 /* ScanQRCodeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98218721DD453EA00000161 /* ScanQRCodeVC.storyboard */; };
+		E98302391DD8228B0070F72E /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = E98302321DD8228B0070F72E /* SVIndefiniteAnimatedView.m */; };
+		E983023A1DD8228B0070F72E /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E98302341DD8228B0070F72E /* SVProgressHUD.bundle */; };
+		E983023B1DD8228B0070F72E /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E98302361DD8228B0070F72E /* SVProgressHUD.m */; };
+		E983023C1DD8228B0070F72E /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E98302381DD8228B0070F72E /* SVRadialGradientLayer.m */; };
+		E983023E1DD83C1C0070F72E /* QRCodeTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E983023D1DD83C1C0070F72E /* QRCodeTool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,16 @@
 		E982186E1DD453B200000161 /* GeneratorQRCodeVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GeneratorQRCodeVC.storyboard; sourceTree = "<group>"; };
 		E98218701DD453CE00000161 /* DetectorQRCodeVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetectorQRCodeVC.storyboard; sourceTree = "<group>"; };
 		E98218721DD453EA00000161 /* ScanQRCodeVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ScanQRCodeVC.storyboard; sourceTree = "<group>"; };
+		E983022C1DD822300070F72E /* QRCode-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QRCode-Bridging-Header.h"; sourceTree = "<group>"; };
+		E98302311DD8228B0070F72E /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		E98302321DD8228B0070F72E /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		E98302331DD8228B0070F72E /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		E98302341DD8228B0070F72E /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		E98302351DD8228B0070F72E /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		E98302361DD8228B0070F72E /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		E98302371DD8228B0070F72E /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		E98302381DD8228B0070F72E /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		E983023D1DD83C1C0070F72E /* QRCodeTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +65,7 @@
 			children = (
 				E982183E1DD44EC600000161 /* QRCode */,
 				E982183D1DD44EC600000161 /* Products */,
+				E983022C1DD822300070F72E /* QRCode-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,6 +186,8 @@
 		E982185F1DD4501500000161 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				E98302301DD8228B0070F72E /* SVProgressHUD */,
+				E983023D1DD83C1C0070F72E /* QRCodeTool.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -207,6 +225,21 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		E98302301DD8228B0070F72E /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				E98302311DD8228B0070F72E /* SVIndefiniteAnimatedView.h */,
+				E98302321DD8228B0070F72E /* SVIndefiniteAnimatedView.m */,
+				E98302331DD8228B0070F72E /* SVProgressHUD-Prefix.pch */,
+				E98302341DD8228B0070F72E /* SVProgressHUD.bundle */,
+				E98302351DD8228B0070F72E /* SVProgressHUD.h */,
+				E98302361DD8228B0070F72E /* SVProgressHUD.m */,
+				E98302371DD8228B0070F72E /* SVRadialGradientLayer.h */,
+				E98302381DD8228B0070F72E /* SVRadialGradientLayer.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -240,6 +273,7 @@
 					E982183B1DD44EC600000161 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = ZF463HMDY2;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -267,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E983023A1DD8228B0070F72E /* SVProgressHUD.bundle in Resources */,
 				E982184A1DD44EC600000161 /* LaunchScreen.storyboard in Resources */,
 				E982186F1DD453B200000161 /* GeneratorQRCodeVC.storyboard in Resources */,
 				E98218471DD44EC600000161 /* Assets.xcassets in Resources */,
@@ -283,10 +318,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E983023C1DD8228B0070F72E /* SVRadialGradientLayer.m in Sources */,
+				E98302391DD8228B0070F72E /* SVIndefiniteAnimatedView.m in Sources */,
 				E98218671DD452A200000161 /* DetectorQRCodeVC.swift in Sources */,
 				E982186B1DD452CB00000161 /* ScanQRCodeVC.swift in Sources */,
 				E98218691DD452BA00000161 /* GeneratorQRCodeVC.swift in Sources */,
 				E98218641DD4501500000161 /* AppDelegate.swift in Sources */,
+				E983023B1DD8228B0070F72E /* SVProgressHUD.m in Sources */,
+				E983023E1DD83C1C0070F72E /* QRCodeTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,11 +448,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = ZF463HMDY2;
 				INFOPLIST_FILE = "$(SRCROOT)/QRCode/Classes/Other/System/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.crazy.QRCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "QRCode-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -422,11 +465,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = ZF463HMDY2;
 				INFOPLIST_FILE = "$(SRCROOT)/QRCode/Classes/Other/System/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.crazy.QRCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "QRCode-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
