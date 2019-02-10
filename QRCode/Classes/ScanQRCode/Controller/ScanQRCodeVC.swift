@@ -33,8 +33,8 @@ class ScanQRCodeVC: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        beginAnimating()
         beginScaning()
+        beginAnimating()
     }
     
     /// 实现扫描动画效果

@@ -160,9 +160,9 @@ class QRCodeTool: NSObject {
         }
         
         //2判断是否正在扫描(防止重复点击创建会话)
-        if session!.isRunning {
-            return
-        }
+//        if session!.isRunning {
+//            return
+//        }
         
         //3开始扫描
         session!.startRunning()
@@ -202,16 +202,16 @@ extension QRCodeTool: AVCaptureMetadataOutputObjectsDelegate{
         removeQRCodeBorder()
         
         //只扫描一个结果
-        guard let result = metadataObjects.first as? AVMetadataMachineReadableCodeObject else { return }
-        scanResultBlock!(result.stringValue)
+//        guard let result = metadataObjects.first as? AVMetadataMachineReadableCodeObject else { return }
+//        scanResultBlock!(result.stringValue)
         
         //扫描多个结果
-//        guard let result = metadataObjects as? [AVMetadataMachineReadableCodeObject] else { return }
-//        for result in results{
-            //            print(result.stringValue, result.corners)   //TODO: -二维码内容和四个角的坐标
-//            drawQRCodeBorder(result: result)
-//            SVProgressHUD.showInfo(withStatus: "扫描到了:\(result.stringValue)")
-//        }
+        guard let results = metadataObjects as? [AVMetadataMachineReadableCodeObject] else { return }
+        for result in results{
+                        print(result.stringValue, result.corners)   //TODO: -二维码内容和四个角的坐标
+            drawQRCodeBorder(result: result)
+            scanResultBlock!(result.stringValue)
+        }
     }
     
     

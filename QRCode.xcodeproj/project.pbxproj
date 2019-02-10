@@ -103,8 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				E98218541DD4501500000161 /* Controller */,
-				E98218551DD4501500000161 /* Model */,
-				E98218561DD4501500000161 /* View */,
 			);
 			path = DetectorQRCode;
 			sourceTree = "<group>";
@@ -118,26 +116,10 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		E98218551DD4501500000161 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		E98218561DD4501500000161 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		E98218571DD4501500000161 /* GeneratorQRCode */ = {
 			isa = PBXGroup;
 			children = (
 				E98218581DD4501500000161 /* Controller */,
-				E98218591DD4501500000161 /* Model */,
-				E982185A1DD4501500000161 /* View */,
 			);
 			path = GeneratorQRCode;
 			sourceTree = "<group>";
@@ -149,20 +131,6 @@
 				E982186E1DD453B200000161 /* GeneratorQRCodeVC.storyboard */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		E98218591DD4501500000161 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		E982185A1DD4501500000161 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		E982185B1DD4501500000161 /* Other */ = {
@@ -196,8 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				E98218611DD4501500000161 /* Controller */,
-				E98218621DD4501500000161 /* Model */,
-				E98218631DD4501500000161 /* View */,
 			);
 			path = ScanQRCode;
 			sourceTree = "<group>";
@@ -209,20 +175,6 @@
 				E98218721DD453EA00000161 /* ScanQRCodeVC.storyboard */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		E98218621DD4501500000161 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		E98218631DD4501500000161 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		E98302301DD8228B0070F72E /* SVProgressHUD */ = {
@@ -272,7 +224,7 @@
 				TargetAttributes = {
 					E982183B1DD44EC600000161 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = ZF463HMDY2;
+						DevelopmentTeam = A7YM93Q8P3;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
@@ -449,7 +401,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = ZF463HMDY2;
+				DEVELOPMENT_TEAM = A7YM93Q8P3;
 				INFOPLIST_FILE = "$(SRCROOT)/QRCode/Classes/Other/System/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
@@ -466,7 +418,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = ZF463HMDY2;
+				DEVELOPMENT_TEAM = A7YM93Q8P3;
 				INFOPLIST_FILE = "$(SRCROOT)/QRCode/Classes/Other/System/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="K7H-fd-ChE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="K7H-fd-ChE">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,39 +21,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="code2" translatesAutoresizingMaskIntoConstraints="NO" id="1OT-AL-gle">
-                                <rect key="frame" x="37" y="64" width="300" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="Et0-bN-IjW"/>
-                                    <constraint firstAttribute="height" constant="300" id="uty-47-qYc"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="code2" translatesAutoresizingMaskIntoConstraints="NO" id="1OT-AL-gle">
+                                <rect key="frame" x="16" y="64" width="343" height="300"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xO1-4E-KDx">
-                                <rect key="frame" x="156" y="372" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="开始识别"/>
-                                <connections>
-                                    <action selector="beginClick" destination="K7H-fd-ChE" eventType="touchUpInside" id="6pb-v8-hxi"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DqH-Bs-s3K">
-                                <rect key="frame" x="37" y="367" width="300" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="0Xc-AP-peh"/>
-                                    <constraint firstAttribute="height" constant="300" id="NeZ-LK-Lcp"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DqH-Bs-s3K">
+                                <rect key="frame" x="0.0" y="367" width="375" height="300"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yus-0w-SyS">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xO1-4E-KDx">
+                                <rect key="frame" x="150.5" y="316.5" width="74" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="开始识别">
+                                    <color key="titleColor" red="0.94557027279999994" green="0.14144862389999999" blue="0.0081695224619999993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="beginClick" destination="K7H-fd-ChE" eventType="touchUpInside" id="6pb-v8-hxi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DqH-Bs-s3K" secondAttribute="trailing" id="9bp-qR-PFK"/>
                             <constraint firstItem="y4K-M9-xIq" firstAttribute="top" secondItem="DqH-Bs-s3K" secondAttribute="bottom" id="B64-eG-AIz"/>
                             <constraint firstItem="1OT-AL-gle" firstAttribute="top" secondItem="WVG-pM-b2L" secondAttribute="bottom" id="E9M-wC-nsO"/>
-                            <constraint firstItem="1OT-AL-gle" firstAttribute="centerX" secondItem="7VT-xq-si6" secondAttribute="centerX" id="PwR-PD-Z8C"/>
-                            <constraint firstItem="DqH-Bs-s3K" firstAttribute="centerX" secondItem="7VT-xq-si6" secondAttribute="centerX" id="nvc-b9-ahy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1OT-AL-gle" secondAttribute="trailing" id="Khd-by-4vK"/>
+                            <constraint firstItem="DqH-Bs-s3K" firstAttribute="leading" secondItem="7VT-xq-si6" secondAttribute="leading" id="Pew-O6-R6O"/>
+                            <constraint firstItem="xO1-4E-KDx" firstAttribute="centerY" secondItem="7VT-xq-si6" secondAttribute="centerY" id="ZeY-Gz-w6g"/>
+                            <constraint firstItem="1OT-AL-gle" firstAttribute="leading" secondItem="7VT-xq-si6" secondAttribute="leadingMargin" id="c7f-bL-cc6"/>
+                            <constraint firstItem="xO1-4E-KDx" firstAttribute="centerX" secondItem="7VT-xq-si6" secondAttribute="centerX" id="cgW-hm-Zd0"/>
+                            <constraint firstItem="1OT-AL-gle" firstAttribute="height" secondItem="7VT-xq-si6" secondAttribute="height" multiplier="0.45" id="jIU-Uy-tQc"/>
+                            <constraint firstItem="DqH-Bs-s3K" firstAttribute="height" secondItem="1OT-AL-gle" secondAttribute="height" id="uyD-WS-5gq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="识别二维码" id="329-5r-YmL"/>
@@ -65,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dlH-eX-cCr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="854" y="439"/>
+            <point key="canvasLocation" x="853.60000000000002" y="438.53073463268368"/>
         </scene>
     </scenes>
     <resources>
